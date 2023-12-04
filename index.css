@@ -1,50 +1,104 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 
+*{
+  font:#3C373B ;
+}
+
+/* div{
+  margin:200px;
+} */
 
 h1 {
   font-family: 'Gaegu', cursive;
   margin: 20px 0;
   /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 10px;
+  text-align: center;
+  font-size: 60px;
 }
 
+/*DİSPLAY FLEX*/
+
+nav{
+  text-align: center;
+  
+}
+nav button{
+  height: 75px;
+  border: none;
+  border-radius: 15%;
+}
+
+
+nav ul button{
+  width: 10%;
+  margin: 2.5%;
+  font-size: 25px;
+  color: #FFFFFF;
+  background: #E79947;
+}
+#banner{
+  align-items: center;
+  width: 1700px;
+  height: 300px;
+  margin-left: 5%;
+  
+}
+
+
+#yemek{
+ 
+  width: 90%;
+  float: left;
+  margin: 15px;
+}
+
+#yemekp{
+  
+  float:none;
+  /* margin-top: 2500px; */
+}
+
+
+
+
+/* #tatli{
+  display: inline-block;
+ 
+  
+}
+#tatlip{
+  display: inline-block;
+} */
 h2, h3, h4, h5, h6 {
   font-family: 'Gaegu', cursive;
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Font size'ı 30px yapın*/
-  font-size: 10px;
+  font-size: 30px;
 }
 
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
 
+*/
+p
+{
 font-size: 16px;
 font-family: roboto;
 padding: 10px;
 line-height: 1.4;
-
-*/
-
+}
 
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
 
-  border-radius: 10px;
 
 */
+/* img
+{
+  border-radius: 10px;
+ } */
 
-.content-row {
-  display: flex;
-}
 
-.content-row div {
-  /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
-}
-
-.container {
-  /*======= width property yaratın. Değerini 750px olarak atayın */
-  margin: 0 auto;
-}
-
+    
 .container header nav a {
   margin: 0 10px;
   border: 1px solid lightgray;
@@ -55,68 +109,85 @@ line-height: 1.4;
   text-decoration: none;
   margin-bottom: 20px;
    /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
+   background: #E79947;
   
 }
 
 .container header nav a:hover {
 /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini #E79947 yapın. */
+background: white;
+color: #E79947;
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
-
-.contact-section {
-  border-top: 1px dashed black;
-  padding: 20px 0;
+.aboutDiv{
+  margin-top: 20px;
+  display: flex;
+}
+.aboutDiv p {
+  font-family: Roboto;
+font-size: 25px;
+font-weight: 200;
+line-height: 60px;
+letter-spacing: 0em;
 }
 
-.contact-section h2 {
-  padding: 0;
-  margin: 0 0 10px 0;
+img{
+  border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
 }
 
-/*======= contact-section class'da address tag'i için aşağdıaki stilleri içeren bir selector yaratın:
-   line-height: 2;
-*/
 
-footer {
-  width: 100%;
-  background: #E79947;
-  border-top: 1px dashed white;
-}
-
-footer .footer-content { 
-  margin: 0 auto; 
-  /*======= width property yaratın. Değerini 750px olarak atayın */
-  
-}
-
-footer .footer-content h3 {
-  padding: 0;
-  margin: 20px 0;
-}
-
-footer nav {
+.yemekdiv{
   display: flex;
 }
 
-/*======= Footer'daki anchor tag için aşağıdaki stilleri içeren bir selector yaratın:
-  margin: 10px;
-  color: black;
-  text-decoration: underline;
-*/
 
-
-footer nav a:first-child {
-  margin-left: 0;
+.aperatifdiv{
+  display: flex;
 }
 
-/*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
-  color: white;
-*/
+/* #aperatif{
+  width: 100%;
+}
 
-footer .footer-content .copyright {
-  padding: 20px 0;
-   /*======= metni ortalayacak kodu yazın */
+#aperatifp{
+
+width: 10%;
+} */
+
+.tatlidiv{
+  display: flex;
+
+}
+
+.contactP{
+  font-family: Roboto;
+font-size: 45px;
+font-weight: 400;
+line-height: 90px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.footerFirstDiv{
+  display: flex;
+  justify-content: left;
+ 
+}
+.footerFirstDiv p{
+  border-bottom: solid black 2px;
+  margin-right: 5px;
+}
+
+.footerSecondDiv{
+  text-align: center;
+}
+
+.footer-container{
+  background-color: #E79947;
+  border-radius: 2%;
 }
